@@ -1,0 +1,64 @@
+---- El menor tapa al mayor
+++++
+
+puerta 101
+teletransporte 101
+bala 100
+delfin 10
+pinchos 10
+	pinchos intermitentes
+bala enemiga 0
+bloque 0
+lava 0
+agua 0
+invisible 0
+animado 0
+bloque fragil 0
+bloque hielo 0
+grav 0
+mediobloque der y izq 0
+bloque salto 0
+plataforma 0
+plataforma inestable 0
+plataforma lava 0
+plataforma movx 0
+plataforma x doslados 0
+punto mapamundi 0
+sigroom 0
+muelle 0
+obj_pwx 0
+checkpoint 0
+llave 0
+escalera 0
+chorro lava 0
+puerta llave 0
+pinchocae 0
+hilo araña 0
+light 0
+enemigo - 10
+	torreta
+	goomba
+		goomba_nocae
+	caparazon
+	baboso
+	eggman
+	boss
+	enemigo escudo
+	invencible
+	tiburon
+	pulpo
+piraña -10
+heroe -100
+	heroe delfin
+	todos los heroepw
+heroe mapamundo -100
+heroe muerto -100
+heroe lvup -100
+teclas tutorial -100
+obj nvx -100
+npc -102
+npc4 -102
+npc2 -102
+npc3 -102
+lightcontrol -103
+boss3 -104

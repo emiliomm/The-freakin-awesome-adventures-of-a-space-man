@@ -1,0 +1,355 @@
+Version necesaria: 1.4.1474
+
+TODO:
+- Estilo de juego
+	- VER MECÁNICAS JUEGO SHOVEL KNIGHT
+	- Se puede convertir al juego en un metroidvania mediante la revisita de niveles antiguos con nuevas habilidades que permiten acceder a niveles superiores
+	- Los jefes finales deben ser un examen a la habilidad del jugador
+- Estilo gráfico
+	- Ver video favoritos left para ver estilo gráfico
+- Añadir una historia que mezcle Zelda, el Profesor Layton y Dark Souls
+	- Centrarse en los personajes
+	- El protagonista es silencioso, habla, pero no se le "oye" en el juego (como Link)
+	- Al matar al boss, este le empieza a hablar en su cabeza (como booker en burial at sea, ya que se siente culpable de haberlo matado). Su personalidad ácida contrasta con la felicdad de la mayoria de personajes
+	- El protagonista toma una unica decision al final del juego
+	- Contar la historia sin paradas
+	- Añadir hermano heroe
+		-Geneticamente superior a el en muchos aspectos (como en la peli gattaca)
+	- Añadir homenajes a otros juegos en los niveles/historia
+
+CARACTERÍSTICAS QUE AÑADIR
+- Arreglar codigo npcs y obj_texto
+- Acabar con los text conversacion
+	- Agrandar avatar, caja de texto y letras
+- Ahora el boton de accion será la e
+	- Añadir tecla al mando
+- Poder revampear letras
+	- Usar variables globales
+- En el mapamundi, al volver de una pantalla, deberías ir al lugar donde estabas antes
+- Ver que hacer con la variable y el nivel_actual, mejorar codigo
+- Actualizar el codigo de los heroepw del objnv
+	- Volver a hacerlos con una variable en vez de con inst change
+	- Dos tipos de pw = permanentes y con tiempo ¿?
+- Mejorar la depth de los objetos
+	- Los pw_heroe tienen menos depth que el heroe
+	- La vida de los bosses es tapada por los bloques
+- Poder enfrentarte a los bosses una vez vencidos.
+	- El sprite cambiaría su skin a azul, serían espíritus de los muertos
+	- Las puntuaciones serían menores
+	- Utilizar variable global. nivel_actual ¿?
+- Cambiar aleatoriamente fondo mundo 0 entre dia, tarde y noche
+- Crear objnpc padre y derivar los otros cambiando sprite, texto, etc...
+- Crear objnv padre y derivar los otros
+- Hacer que el boss siga al heroe, o que al menos no dispare cuando no le está mirando
+- Adaptar la pantalla de pausa al mando. (Boton volver al mapamundi)
+- Crear boss que se multiplique al dañarle
+- Un aumento de nivel sería el aumento de vida
+- Añadir step al obj_enemigo, la mayoria son similares
+- Cambiar sprite invencible y dibujar a enemigo_escudo diferente segun nivel
+- Convertir el heroe invertido en un powerup
+- Poder elegir el nombre del archivo (ranura, partida)
+- Juntar todos los ifs con &&, mejora el rendimiento debido a como funciona Game Maker REVISAR TODO EL CÓDIGO
+- El nivel atado debe ser de izq a der
+- Añadir mundo de aire ¿?
+- Añadir nivel selva
+- Añadir mundo ambientado en las islas del caribe
+- Crear mundo estación de metro (aparecen metros que te atropellan ¿?)
+- Añadir mundo en el 0-1, donde no puedes saltar ni disparar
+- Añadir bloques que desaparecen y aparecen con un timer (como megaman)
+- Añadir bloques que se ven pero se necesita powerup para escalarlo (como escalera)
+- Crear enemigo que se regenera
+- Crear enemigo dash (se mueve de repente hacia el heroe horizontalmente desde el suelo)
+- Crear enemigo volador ¿?
+- Crear murcielago que se cuelga del techo y al aparecer el heroe baja y vuela horizontalmente
+- Crear más enemigos (con pautas de ataque y movimiento diferentes)
+- Mejorar boss3
+	- Mejorar comportamiento y animaciones boss3
+	- La araña tira arañitas
+	- Tira veneno que te paraliza
+- Mejorar fantasma
+	- Background y sprites cambian a negro
+	- Se ven mediosbloques ocultos que permiten acceder a zonas ocultas
+- Explicar la obtención del doble salto
+- Mejorar el menu de pausa
+	- Hacer el menú de pausa como un menú
+	- Desde ahí se puede acceder al menú de preferencias y cambiarlas
+- Cambiar las puertas que te teletransportan a otra habitación (hay que añadir código en la creación de código en la room manualmente)
+- Mejorar eggman (que a veces chafe al heroe, quitando durabilidad a la plataforma)
+- Cambiar el nombre al obj_nv
+- Cambiar sprite heroe al principio
+- Cambiar sistema de sonido al nuevo
+	- Cambiar manejo de sonido con variable global y scripts
+	- Controlar la música que suena actualmente con variable global
+	- Poder bajar y subir volumen
+- Créditos con scroll
+- Créditos con la puntuación total
+- El fantasma no debería afectar a las plataformas inestables
+- Desactivar interpolación pixeles ¿? (elimina errores, se ve peor)
+- Mejorar pantalla inicial
+	- Cambiar menús, táctiles y vistosos (sprites); el título también
+	- Añadir transición en pantalla inicial
+- Pensar niveles para el delfin y donde podría tener sentido
+- Añadir cursor personalizado
+- Animar el pincho_cae antes de caer
+- Añadir animacion bloque debil al destruirse
+- Hacer que nieve en el mundo de hielo
+- Añadir meteoritos en el mundo de la nave
+- Añadir bloque arrastable ¿?
+- Mover nave más fluida (Ver tutorial shaun naves)
+- Powerup espada (lucha de espada con otros enemigos ¿?)
+- El heroe debe tener vida ¿?
+	- Pensar que tipo de plataformas debe de ser el juego
+- Hacer que los enemigos y bloques cambien su sprite por una variable global, y no por el nombre de la hab. (variable en habitacion y segun variable cambiar sprite ¿?)
+- Hacer que cada llave abra una sola puerta
+- Añadir turbo a la nave
+- Hacer que no puedas disparar tan rapido, sino en un intervalo
+- Añadir plataforma movil y
+- Mejorar el sistema de guardado
+	- Avisar al empezar nueva partida de sobreescribir partida guardada
+	- Quitar selección niveles
+	- Mirar tutorial encriptado de archivo de guardado
+- Añadir animacion al goomba y al baboso al saltar sobre el y matarlo chafandole
+	- Animar al baboso
+- Crear sprite traje agua
+- Animar lava y partículas (ver tutoriales)
+	- Animar el chorro de lava bien
+- Juntar los sprites del heroe en un sprite (de cada pw, etc...)
+- Añadir vidas como Mario. (Al acabarse todas, vuelves a empezar desde el principio). Deberían guardarse en el archivo de guardado y salir en una GUI de alguna manera
+- Mejorar como bajan la velocidad en los mundos de agua y espacio los enemigos con un vector y un for que recorra todos las instancias de los enemigos (ver ayuda game maker)
+- Cuando toca la pared, el heroe deberia caer mas lento y salir humo
+- Añadir sprite heroe_muerto
+- Cambiar sprite heroe en rampas
+- Crear path finding piraña
+- Hacer la piraña un obj enemigo
+- Añadir más sonidos
+- Poder elegir varios heroes ¿?
+- Añadir multijugador asincrono o a la vez ¿?
+- Añadir soporte mando no_legacy (xbox y playstation,con gamepad)
+- Rehacer los niveles
+- Las balas deben rebotar en el invencible ¿?
+- Añadir direccion al goomba y cambiarle sprites
+- Redibujar todos los sprites, estilo 8 bits
+	- El estilo de los bloques /fondos del mundo 1 debería ser pixel-art.
+- Crear mask bloque del que derive el obj bloque, sin textura
+- Mejorar codigo heroe
+	- Mask héroe separado, estrechado para que cuando toque un borde no muera con los pinchos
+	- Animación héroe en end step
+	- Entity die, para cuando muere el héroe o el enemigo (ver vídeo tutorial Simón)Con with entity die podemos poner el sprite que queremos al morir con determinados enemigos, habría que cambiar el sprite de la muerte
+- Hacer que los enemigos se muevan en las plataformas
+- Que todos los enemigos tengan vida(aunque sea so!o 1) para facilitar el codigo con el enemigo aplastable
+- Se empieza con enemigos faciles (1 vida) y despues los enemigos cada vez son mas fuertes
+
+BUGS
+- Quitar transparencias todos los sprites, con make opaque
+	- Quitar silueta blanca/transparente sprite fuego
+- El heroe se engancha en el bloque grav al saltar sobre el en el techo
+- El bloque animado no funciona
+- Al conectar el mando, el mensaje del menu de pausa no se ve entero
+- Reescribir código animación heroe
+	- Corregir animacion heroe al disparar y en la escalera
+	- Animar al heroe sobre la plataforma movil (arriba/abajo, como la plataforma)
+	- Corregir animacion heroe grav inversa
+- Cambiar codigo obj bala y la manera que es creada en el heroe
+	- Animar la bala al chocar
+	- Bala más lenta
+	- Bala más grande
+	- La tecla del ratón es released, debería ser pressed
+- Adaptar el tutorial al mando
+- Solucionar sistema checkpoints
+	- Al cargar partida, elegir nivel, el checkpoint elegido deberia ser el primero
+- Mover las colisiones de todos los objetos entre la x y la y
+- Sobre hielo, al pulsar a y d a la vez, se mueve hacia la izquierda demasiado
+- Colision platxmoverse está mal a la derecha (quizá sea sprite ¿?)
+- Corregir pausa nave
+- El delfin es dificil de coger, debería ser una animación con los sprites y ponerle la colisión entera, pero es dificil de hacer.
+- Arreglar bug que si tocas las plataformas_lava por debajo mueres
+- Solucionar sprite del obj-heroe-muerto que no cambia ¿?
+- Corregir que el heroe vuela cuando está encima de una escalera
+- Solucionar lo de las caidas de los enemigos (quitar el bloque invisible, reescribir codigo)
+- Solucionar bug colision heroe enganchado al lado de un bloque (probar en el mundo agua, pasa tambien otras veces, posiblemente a causa del cambiode velocidad en el mundo agua al tocar suelo)
+- Solucionar colision baboso y enemigo escudo, el enemigo escudo se engancha (probar en el mundo agua)
+- La piraña puede atravesar bloques (mirar codigo deseganche)
+- Corregir lineas "feas" que aparecen en los fondos al poner varios(ver mundo 1)(causa: pixeles interpolados)
+- Corregir fondo en movimiento moviendose más rapido al moverse el heroe, debería moverse siempre igual de velocidad
+- Reescribir codigo heroe y otros bien
+	- Mirar que hacer con variables direccion-movimiento
+
+v1.4
+- Cambiado icono
+- Añadido vsync, que elimina el tethering a pantalla completa (En global game settings)
+- Mejorado menu principal
+	- Añadida pantalla de título básica
+	- Fuentes de menús de 8bit
+	- Los menús se crean y destruyen en la misma room, no hacen falta varias, lo que hace que el fondo en movimiento no se reinicie
+	- El fondo ya no tiene huecos negros
+- El juego se puede actualizar
+- El juego se inicia en pantalla completa (se puede desactivar)
+	- La pantalla completa se ve sin bandas negras
+	- El tamaño de ventana se puede redimensionar
+- Añadido sistema de guardado/carga inicial de nivel y de preferencias
+	- Disponibles 3 ranuras de guardado
+	- Las preferencias son independientes de las ranuras, dependen del ordenador en el que se ejecuten
+	- Al usar la pantalla de selección de nivel, pueden haber problemas con las ranuras de guardado, pero es normal, ya que esa pantalla desaparecerá
+- Añadido soporte gamepad (no oficiales) a petición de mi padre
+	- El cursor desaparece al conectar el mando
+- Añadido menu de preferencias
+- Cambiados los créditos
+- Reescrito código variables globales
+- Ahora el random es realmente aleatorio
+- Simplificado el script de la muerte
+- Añadido nv al heroe, avanza al ocurrir eventos importantes (llegar a cierto punto, matar a un boss...)
+	- Animación de nivel+ al subir de nivel
+	- Ahora el heroe tiene cambios permanentes según el nv (doble salto, etc...)
+- Ahora el movimiento de salto de pared es como Mario ;)
+- Modificadas las colisiones, corrigiendo varios errores
+	- Creado objeto enemigo del que derivan los demás enemigos que simplifica y mejora las colisiones enemigas
+	- Ahora todos los enemigos colisionan entre sí
+	- Ahora todos los enemigos colisionan con los pinchos
+- Cambiado el código de los powerup
+	- Los powerups permanentes ya no son objetos que se cojen
+	- Cada powerup cambia al heroe en un obj_heroe_pwx, en vez de cambiar solo sus variables
+- Los objetos_bloque cambian su sprite dependiendo de:
+	- El nivel en el que se encuentran
+	- Los bloques o mediobloques alrededor suyo
+- Añadido fondos con varias capas y mejor dibujados mundo 1-1 y 1-2
+- Añadida lluvia al mundo 1-2 (básica, mejorar rendimiento)
+- Ahora los bosses tienen vida
+- Añadido bloque salto
+	- Cada vez que saltas, desaparece/aparece
+	- Dos tipos, cuando uno aparece, el otro desaparece
+- Añadido bloque que invierte la gravedad del heroe al pisarlo
+- Añadida plataformax que se mueve según en que lado pise el jugador
+- Añadido picho que aparece y desaparece en un intérvalo fijo
+- Añadidas las puertas que te teletransportan a otra habitación (hay que añadir código en la creación de código en la room manualmente, cambiar)
+- Cambiada la manera en la que aparece el texto (Aparece con un cuadro de forma suave)
+- Eliminado nivel de tutorial
+- Añadida intro inicial básica
+- Añadido mapamundi básico
+	- Los niveles se van desbloqueando conforme el heroe avanza
+- Añadido pantalla de introducción de nivel donde se muestra el nivel actual
+	- Contiene subniveles, como dos casas y una cueva
+- Añadido nivel de introducción
+	- Aparece gente con color y velocidad aleatorias
+	- Te explica los controles, no las mecánicas (eso hacerlo al estilo megaman)
+	- Obtienes la habilidad de disparar y saltar
+- Añadido nivel de agua
+	- Añadido tiburon
+	- Añadido pulpo
+	- Añadida piraña, que te sigue cuando está cerca del heroe, con animación
+	- El heroe camina más lento sobre al andar en el agua que al nadar
+	- Anadido delfin montable
+		- Al chocar/pulsar click izquierdo el delfin el heroe se desmonta con un estado temporal invencible y el delfin desaparece
+		- Añadido estado invencible que funciona con todos los enemigos
+		- Al estar en estado invencible, el heroe no puede disparar
+- Añadido nivel de lava
+	- Añadida lava
+	- Añadido chorro de lava
+	- Añadida plataforma de lava que flota sobre el chorro(POR FIN :D)
+		- El heroe se mueve verticalmente
+		- Puede saltar sobre ella
+		- Colisión correcta
+		- Al aplastar al heroe contra una plataforma, muere (cambiar ¿?)
+	- Añadidos pinchos que caen y matan al heroe
+- Añadido nivel de hielo
+	- Añadido bloque de hielo, que añade fricción al dejar de moverse. No se pueden saltar paredes en él
+- Añadido nivel de nave de prueba
+	- Los bordes de la cámara son más grandes, se mueve más
+- Añadido nivel donde el heroe está atado limitando sus movimientos
+	- El heroe debe moverse saltando
+- Añadido nivel donde todos los sprites se muestran oscuros (Tipo Limbo)
+	- Cada cierto tiempo, se muestran junto con el fondo, pero vuelven a la oscuridad rápidamente (configurable en el obj_parpadeo)
+	- Reescrito la forma en que se dibujan algunos sprites de varios objetos, para que el color se cambie correctamente (image_blend)
+- Añadido nivel de boss2 que se mueve igual que el heroe, pero tiene doble salto
+	- Al vencerle, el heroe obtiene el doble salto
+- Añadido nivel de surf de prueba
+- Añadido nivel de boss3 (araña), de prueba
+- Los niveles del mar y del espacio funcionan correctamente a 60 fps
+	- Las balas van más lentas en el agua/espacio
+	- Los enemigos se mueven más lentamente
+	- Muchos más arreglos
+- Añadidas torretas-laser, solo atacan cuando ven al jugador
+- Añadido enemigo baboso, que salta
+- Añadido enemigo escudo, las balas rebotan al darle al escudo
+- Añadida puntuación (básica), no se reinicia al morir, como Mario:
+	- Piraña 50
+	- Torreta 100
+	- Goomba 10
+	- Enemigo_caparazon 15
+	- Enemigo_baboso 15
+	- Eggman 1000
+	- Enemigo_escudo 15
+	- Pulpo 15
+	- Tiburon 15
+	- Boss 2000
+- Añadidas rampas/mediobloque
+- Añadida escalera
+- Ahora Eggman se mueve hacia diferentes lados cada vez que inicias el nivel
+- Modificadas las plataformas inestables a petición de Marcos
+- Soporte para mutear el sonido (mejorar más adelante)
+- Añadidos tiles al mundo 1-1 (Para colocarlas correctamente, seleccionar ambos grids x e [])
+- Solucionado crasheo cuando la plataforma vertical iba muy rápida
+- Añadidos sprites de los tiles de todos los mundos excepto el 4
+- El pwastro se anima más lento
+- Ahora los pinchos tienen profundidad (ya no tapan a otros bloques)
+- Ahora la música suena en bucle al acabar (por fin :), con sound_loop
+- Ahora los enemigos hacen una animación similar a mario al ser disparados
+- El heroe tiene animacion al morir
+- Las texturas del mundo 1 y el 2 estaban cambiadas
+- El heroe no muere al colisionar con un goomba encima desde una distancia muy alta
+- El muelle se anima correctamente
+- Las balas ahora están orientadas correctamente
+- Eliminado minipincho 3-2
+- Solucionado minillave 3-1
+- Solucionados muchos otros errores y realizados muchos más cambios...
+
+v1.3 ESTA CARRERA APESTA, PREFIERO SEGUIR CON ESTO
+- Modificadas las plataformas inestables a petición de Marcos
+- Corregida velocidad plataforma movimiento
+- Corregida no repetición musica tutorial
+- El heroe no muere al colisionar con un goomba encima desde una distancia muy alta
+- Todos los enemigos colisionan con los pinchos
+- El muelle se anima correctamente
+- Corregidos sprites con transparencias ocultas (muelle, invencible y otros)
+- Añadidas rampas
+- Las balas ahora están orientadas correctamente
+- Soporte para mutear el sonido (mejorar más adelante)
+- El mundo 1-1 tiene varias capas de fondo (diseño penosamente básico)
+- Añadidos tiles al mundo 1-1 (Para colocarlas correctamente, seleccionar ambos grids x e [])
+- Añadida escalera
+- Solucionado bug 3-2 (minipincho)
+- Solcionado bug 3-1 (minillave)
+- Añadido nivel de agua de prueba
+- Solucionados otros errores
+- Añadidas torretas-laser, solo atacan cuando ven al jugador
+- Añadido enemigo baboso, que salta
+- Ahora el random es realmente aleatorio
+- Solucionado problema con las colisiones de los enemigos (y el problema del invencible volviendose loco)
+
+v1.2b
+- Añadido soporte gamepad (no oficiales) a petición de mi padre
+- Solucionado crasheo cuando la plataforma vertical iba muy rápida
+
+v1.2 DEJA DE MEJORAR EL JUEGO, YA NO SIRVE PARA NADA
+- Ahora Eggman se mueve hacia diferentes lados cada vez que inicias el nivel
+- El juego se puede actualizar
+- El juego se inicia en pantalla completa (se puede desactivar)
+
+v1.1 LO QUE PUDO SER Y NO FUE
+- Solucionado problema checkpoint
+- Bajado el volumen de los sonidos
+- Cambiado el nombre del proyecto
+- Aumentada la vida de Eggman
+- Corregido error creditos
+- Corregido error enemigos mundo 2-1
+- Eliminado goomba 3-2
+- Añadida versión en el menú
+- Añadido fondo menus y editado velocidad (60 fps)
+- Añadidos sonidos a Eggman de muerte y victoria, además no se solapan
+- Reducida duración plataforma inestable a 80. (anteriormente 100).
+- Mejorado comportamiento música menú
+- Alargada música tutorial, ya no se para tan pronto
+- Añadido menú creditos
+- Si te has pasado la pantalla de eggman, los menús de créditos y principal cambian
+- La musica ya no se reinicia al morir
+- Corregido fondo mundo 3
+
