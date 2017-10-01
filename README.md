@@ -1,8 +1,6 @@
-# The freaking awesome adventures of a space man
+# Web page with simuation examples
 
-* [Demo link for Windows](https://mega.nz/#!zVcBSYLQ!s4P8SuvLaZzBsrPxwxg_nAxyGCAGMnKYibOxRdOgyUE) - .exe file
+* [Link](emiliomm.github.io)
 
-2D 8bit style platformer made by Game Maker.
-  - 3 working worlds
-  - 2 working bosses
-  - Powerups
+Simple web page made by https://pages.github.com/.
+  - Showing some simple simulations made by Processing.js.
